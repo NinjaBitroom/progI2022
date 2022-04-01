@@ -7,17 +7,37 @@
     <title>Meu formulário</title>
 </head>
 <body>
-    <h1>Formulário</h1>
+    <h1>Formulário de Inscrição em Evento</h1>
     <a href="../../index.html">Voltar</a>
     <form>
         <table>
             <tr>
-                <td><label for="nome">Nome:</label></td>
-                <td><input type="text" name="nome" id="nome" placeholder="Seu nome"></td>
+                <td><label for="nome">Nome completo:</label></td>
+                <td><input type="text" name="nome" id="nome"></td>
             </tr>
             <tr>
-                <td><label for="dataNasc">Data de nascimento:</label></td>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="ex: myname@example.com"></td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td><input type="radio" name="sexo" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label></td>
+                
+            </tr>
+            <tr>
+                <td><label for="cargo">Cargo:</label></td>
+                <td><input type="text" name="cargo" id="cargo"></td>
+            </tr>
+            <tr>
+                <td><label for="dataNasc">Nascimento:</label></td>
                 <td><input type="date" name="nasc" id="dataNasc"></td>
+            </tr>
+            <tr>
+                <td><label for="telefone">Telefone:</label></td>
+                <td><input type="tel" name="telefone" id="telefone"></td>
             </tr>
             <tr>
                 <td></td>
@@ -27,6 +47,49 @@
                 </td>
             </tr>
         </table>
+        <h2>Informações da Instituição</h2>
+        <p>Preencha os campos abaixo com as informações da empresa em que trabalha.</p>
+        <table>
+            <tr>
+                <td><label for="empresa">Empresa:</label></td>
+                <td><input type="text" name="empresa" id="empresa"></td>
+            </tr>
+            <tr>
+                <td><label for="endereco">Endereço Completo:</label></td>
+                <td><input type="text" name="endereco" id="endereco"></td>
+            </tr>
+            <tr>
+                <td><label for="cidade">Cidade:</label></td>
+                <td><input type="text" name="cidade" id="cidade"></td>
+            </tr>
+            <tr>
+                <td><label for="estado">Estado:</label></td>
+                <td><select name="estado" id="estado">
+                    <option selected disabled>Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="quantFunc">Quant. Funcionários:</label></td>
+                <td><input type="number" name="quantFunc" id="quantFunc"></td>
+            </tr>
+            <tr>
+                <td><label for="obs">Observações:</label></td>
+                <td><textarea name="obs" id="obs" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><label for="recibo">Recibo:</label></td>
+                <td><input type="checkbox" name="recibo" id="recibo"></td>
+                <td><label for="recibo">Emitir o nome da instituição</label></td>
+            </tr>
+        </table>
+        <input type="submit" value="Fazer Inscrição">
     </form>
 </body>
 </html>
