@@ -1,0 +1,27 @@
+#logo { grid-area: logo; }
+#navigation { grid-area: navigation; }
+#header { grid-area: header; }
+#side-bar { grid-area: side; }
+#body-area { grid-area: body; }
+#footer { grid-area: footer; }
+
+#grid-container {
+    display: grid;
+    background-color: aqua;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    grid-template-areas: 
+    'logo logo logo'
+    'logo logo logo'
+    'navigation navigation navigation'
+    'header header header'
+    'side body body'
+    'side body body'
+    'footer footer footer';
+}
+
+#grid-container > * {
+    background-color: yellowgreen;
+    padding: 20px 0;
+}
