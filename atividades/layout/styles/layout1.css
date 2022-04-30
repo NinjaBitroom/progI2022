@@ -11,14 +11,12 @@
     gap: 10px;
     padding: 10px;
     text-align: center;
-    grid-template-areas: 
-    'logo logo logo'
-    'logo logo logo'
-    'navigation navigation navigation'
-    'header header header'
-    'side body body'
-    'side body body'
-    'footer footer footer';
+    grid-template: 
+    'logo logo logo' minmax(70px, auto)
+    'navigation navigation navigation' minmax(auto, 50px)
+    'header header header' minmax(100px, auto)
+    'side body body' minmax(350px, auto)
+    'footer footer footer' minmax(auto, 50px);
 }
 
 #grid-container > * {
