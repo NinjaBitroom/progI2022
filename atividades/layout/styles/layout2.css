@@ -1,0 +1,38 @@
+#ln { grid-area: ln; }
+#header { grid-area: header; }
+#intro { grid-area: intro; }
+#box1 { grid-area: box1; }
+#box2 { grid-area: box2; }
+#box3 { grid-area: box3; }
+#footer { grid-area: footer; }
+
+#grid-container {
+    display: grid;
+    background-color: aqua;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    grid-template: 
+    'ln ln ln' minmax(70px, auto)
+    'header header header' minmax(100px, auto)
+    'intro intro intro' minmax(auto, 50px)
+    'box1 box2 box3' minmax(350px, auto)
+    'footer footer footer' minmax(auto, 50px);
+}
+
+#grid-container > * {
+    background-color: yellowgreen;
+    padding: 20px 0;
+}
+
+#ln {
+    display: flex;
+}
+
+#logo {
+    flex-grow: 1;
+}
+
+#navigation {
+    flex-grow: 2;
+}
