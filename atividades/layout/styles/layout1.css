@@ -1,8 +1,8 @@
-#logo { grid-area: logo; }
+#logo { grid-area: logo; display: flex;}
 #navigation { grid-area: navigation; }
 #header { grid-area: header; }
-#side-bar { grid-area: side; }
-#body-area { grid-area: body; }
+#side-bar { grid-area: side; display: flex; justify-content: center; align-items: center;}
+#body-area { grid-area: body; display: flex; justify-content: center; align-items: center;}
 #footer { grid-area: footer; }
 
 #grid-container {
