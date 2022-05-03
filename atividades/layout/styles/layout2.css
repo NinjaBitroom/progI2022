@@ -17,7 +17,7 @@
     'header header header' minmax(100px, auto)
     'intro intro intro' minmax(auto, 50px)
     'box1 box2 box3' minmax(350px, auto)
-    'footer footer footer' minmax(auto, 50px);
+    'footer footer footer' minmax(auto, 40px);
 }
 
 #grid-container > * {
