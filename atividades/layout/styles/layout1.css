@@ -1,9 +1,45 @@
-#logo { grid-area: logo; display: flex;}
-#navigation { grid-area: navigation; display: flex; justify-content: center; align-items: center;}
-#header { grid-area: header; display: flex; justify-content: center; align-items: center;}
-#side-bar { grid-area: side; display: flex; justify-content: center; align-items: center;}
-#body-area { grid-area: body; display: flex; justify-content: center; align-items: center;}
-#footer { grid-area: footer; display: flex; justify-content: center; align-items: center;}
+#logo { 
+    grid-area: logo; 
+    display: flex; 
+    justify-content: left; 
+    align-items: center;
+    padding: 20px;
+}
+
+#navigation { 
+    grid-area: navigation; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#header { 
+    grid-area: header; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#side-bar { 
+    grid-area: side; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#body-area { 
+    grid-area: body; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#footer { 
+    grid-area: footer; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
 
 #grid-container {
     display: grid;
@@ -21,5 +57,4 @@
 
 #grid-container > * {
     background-color: yellowgreen;
-    padding: 20px 0;
 }
