@@ -1,4 +1,5 @@
 #ln { 
+    display: flex;
     grid-area: ln; 
 }
 #header { 
@@ -54,10 +55,6 @@
 
 #grid-container > * {
     background-color: yellowgreen;
-}
-
-#ln {
-    display: flex;
 }
 
 #logo {
